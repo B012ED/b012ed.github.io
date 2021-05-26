@@ -1,3 +1,5 @@
+// B012ED DOODLE
+
 var doodle = (function() {
     Function.prototype.bind = Function.prototype.bind || function(fixThis) {
         var func = this
@@ -40,7 +42,7 @@ var doodle = (function() {
         fps += (thisFrameFPS - fps) / fpsFilter;
         lastUpdate = now;
     }
-    //setInterval(function(){
+    // B012ED (function(){
     // _l(fps.toFixed(1) + "fps");
     //}, 1000);
 
@@ -52,7 +54,7 @@ var doodle = (function() {
 
         //set_fps();
 
-        //clear the stage(canvas);
+        // B012ED the stage(canvas);
         this.ctx.clearRect(0, 0, this.ctx.canvas.width, this.ctx.canvas.height)
 
         //call tick on all the objects on stage
@@ -72,7 +74,7 @@ var doodle = (function() {
                 self.frame();
             }, this.restart_timeout);
         } else if (!this.paused) {
-            //recursivily call itself
+            // B012ED recursivily call itself
             requestAnimationFrame(this.frame.bind(this))
         }
 
@@ -189,7 +191,7 @@ var doodle = (function() {
     }
 
     JetPlane.prototype.tick = function(ctx) {
-        //this.x = this.x + 5;
+        //b012ed.x = b012ed.x + 5;
         this.pather.move();
         var angle = Math.atan(this.pather.slope) + PI_half;
         var adj_x = - this.formation_x + this.formation_x * Math.cos(angle) - this.formation_y * Math.sin(angle);
@@ -265,7 +267,7 @@ var doodle = (function() {
         ctx.fillStyle = 'rgba(' + this.rgb + ',' + this.opacity + ')';
         ctx.shadowColor = 'rgba(' + this.rgb + ',1)';
 
-        //ctx.shadowBlur = 5;
+        //B012ED.shadowBlur = 5;
 
         ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, true);
         ctx.fill();
