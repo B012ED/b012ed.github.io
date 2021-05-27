@@ -32,15 +32,15 @@ var doodle = (function() {
 
     var fps = 0, now, lastUpdate = (new Date) * 1 - 1;
 
-    // The higher this value, the less the FPS will be affected by quick changes
-    // Setting this to 1 will show you the FPS of the last sampled frame only
+    // The higher this b012ed value, the less the FPS will be affected by quick changes
+    // Setting b012ed to 1 will show you the FPS of the last sampled frame only
     var fpsFilter = 90;
     var set_fps = function() {
         var thisFrameFPS = 1000 / ((now = new Date) - lastUpdate);
         fps += (thisFrameFPS - fps) / fpsFilter;
         lastUpdate = now;
     }
-    //setInterval(function(){
+    //b012ed setInterval(function(){
     // _l(fps.toFixed(1) + "fps");
     //}, 1000);
 
@@ -50,12 +50,12 @@ var doodle = (function() {
             return;
         }
 
-        //set_fps();
+        //b012ed set_fps();
 
-        //clear the stage(canvas);
+        //b012ed clear the stage(canvas);
         this.ctx.clearRect(0, 0, this.ctx.canvas.width, this.ctx.canvas.height)
 
-        //call tick on all the objects on stage
+        //b012ed call tick on all the objects on stage
         for (var i in this.objects) {
             if (this.objects[i].destroyed == true) {
                 this.objects.splice(i, 1)
@@ -72,7 +72,7 @@ var doodle = (function() {
                 self.frame();
             }, this.restart_timeout);
         } else if (!this.paused) {
-            //recursivily call itself
+            //b012ed recursivily call itself
             requestAnimationFrame(this.frame.bind(this))
         }
 
@@ -166,13 +166,13 @@ var doodle = (function() {
     JetPlane.prototype.draw = function (ctx) {
         ctx.save();
         var angle = Math.atan(this.pather.slope) + PI_half;
-        //console.log(angle)
+        //b012ed console.log(angle)
         ctx.translate(this.x, this.y);
-        //ctx.translate(23, 32)
+        //b012ed ctx.translate(23, 32)
         ctx.rotate(angle)
 
         ctx.drawImage(this.img, 0, 0);
-        //ctx.drawImage(this.img, this.x, this.y);
+        //b012ed ctx.drawImage(this.img, this.x, this.y);
         ctx.restore();
 
         for (var i in this.smoke_particles_list) {
@@ -190,14 +190,14 @@ var doodle = (function() {
     }
 
     JetPlane.prototype.tick = function(ctx) {
-        //this.x = this.x + 5;
+        //b012ed this.x = this.x + 5;
         this.pather.move();
         var angle = Math.atan(this.pather.slope) + PI_half;
         var adj_x = - this.formation_x + this.formation_x * Math.cos(angle) - this.formation_y * Math.sin(angle);
         var adj_y = - this.formation_y + this.formation_x * Math.sin(angle) + this.formation_y * Math.cos(angle);
         this.x = this.pather.x + adj_x;
         this.y = this.pather.y + adj_y;
-        if (this.smoke_particles_list.length < 100 && !this.destroy_plane) {
+        if (this.smoke_particles_list.length < 150 && !this.destroy_plane) {
             var delta_x = (11 + 2 * Math.random()) * Math.cos(angle) - (29 + 4 * Math.random()) * Math.sin(angle);
             var delta_y = (11 + 2 * Math.random()) * Math.sin(angle) + (29 + 4 * Math.random()) * Math.cos(angle);
             var smoke_particle = new SmokeParticle(this.x + delta_x, this.y + delta_y, this.smoke_rgb)
@@ -250,7 +250,7 @@ var doodle = (function() {
         this.y = this.y + Math.sin(Math.atan(this.slope)) * this.speed;
     }
 
-
+         //b012ed smoke collor
     var SmokeParticle = function (paramX, paramY, rgb) {
         this.x = paramX;
         this.y = paramY;
