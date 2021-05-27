@@ -140,7 +140,7 @@ var doodle = (function() {
 
         formation.addPlane(0, 0, "255, 0, 0");
         formation.addPlane(50, -50, "222, 222, 222");
-        formation.addPlane(100, 0, "173, 255, 48.");
+        formation.addPlane(100, 0, "255, 0, 0");
 
         var target_y = stage.ctx.canvas.height - init_y;
         var target_x = stage.ctx.canvas.width - init_x;
