@@ -206,7 +206,7 @@ var doodle = (function() {
         }
         this.draw(ctx);
 
-        var bbw = 50; //bounding box width
+        var bbw = 50; //b012ed bounding box width
         if (this.x > ctx.canvas.width + bbw || this.y > ctx.canvas.height + bbw || this.x < 0 - bbw || this.y < 0 - bbw) {
             this.destroy_plane = true;
         } else {
