@@ -8,7 +8,7 @@ https://b012ed.github.io
 
 * `Tool 👇`
 
-https://b012ed.github.io/Deface/
+https://b012ed.github.io/Deface
 
 
 
