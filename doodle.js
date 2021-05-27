@@ -198,9 +198,9 @@ var doodle = (function() {
         var adj_y = - this.formation_y + this.formation_x * Math.sin(angle) + this.formation_y * Math.cos(angle);
         this.x = this.pather.x + adj_x;
         this.y = this.pather.y + adj_y;
-        if (this.smoke_particles_list.length < 100 && !this.destroy_plane) {
-            var delta_x = (11 + 2 * Math.random()) * Math.cos(angle) - (29 + 4 * Math.random()) * Math.sin(angle);
-            var delta_y = (11 + 2 * Math.random()) * Math.sin(angle) + (29 + 4 * Math.random()) * Math.cos(angle);
+        if (this.smoke_particles_list.length < 50 && !this.destroy_plane) {
+            var delta_x = (12 + 0 * Math.random()) * Math.cos(angle) - (10 + 84 * Math.random()) * Math.sin(angle);
+            var delta_y = (0 + 12 * Math.random()) * Math.sin(angle) + (84 + 10 * Math.random()) * Math.cos(angle);
             var smoke_particle = new SmokeParticle(this.x + delta_x, this.y + delta_y, this.smoke_rgb)
             this.smoke_particles_list.push(smoke_particle);
         }
