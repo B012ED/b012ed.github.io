@@ -284,7 +284,7 @@ var bored = (function() {
     var init = function(jet_img_src) {
 
         var canvas = document.createElement('canvas');
-        canvas.id = "canvas_bored";
+        canvas.id = "canvas_doodle";
         canvas.height = window.innerHeight || html.clientHeight;
         canvas.width = window.innerWidth || html.clientWidth;
         var canvasStyle = canvas.style;
@@ -307,7 +307,7 @@ var bored = (function() {
     var destroy = function() {
         stage.destroy();
         setTimeout(function() {
-            document.body.removeChild(document.getElementById("canvas_bored"));
+            document.body.removeChild(document.getElementById("canvas_doodle"));
         }, 50);
         delete stage;
     }
