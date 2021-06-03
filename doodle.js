@@ -30,7 +30,7 @@ var doodle = (function() {
         return this;
     };
 
-    var fps = 0, now, lastUpdate = (new Date) * 1 - 1;
+    var fps = 90, now, lastUpdate = (new Date) * 1 - 1;
 
     // The higher this value, the less the FPS will be affected by quick changes
     // Setting this to 1 will show you the FPS of the last sampled frame only
