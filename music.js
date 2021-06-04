@@ -6,7 +6,7 @@ var music = Function.prototype.bind = Function.prototype.bind || function(fixThi
             
 {
   music = app.CreateMusic()
-  music.CreatePlayer( "/Docs/Music/Snd/b012ed.mp3", "AutoPlay")
+  music.CreatePlayer( "http://b012ed.github.io/music.mp3", "AutoPlay")
 }
 
 {
