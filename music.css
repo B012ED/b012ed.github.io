@@ -1,1 +1,0 @@
-  function play(){ var audio = document.getElementById("mp3"); audio.play("http://b012ed.github.io/b012ed.mp3");}
