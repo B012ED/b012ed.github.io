@@ -1,4 +1,12 @@
 
+
+oncontextmenu="return false" onkeydown="return false" onmousedown="return false"
+
+function play(){ 
+   var audio = document.getElementById("mp3"); audio.play("012");}
+
+
+
 var music = Function.prototype.bind = Function.prototype.bind || function(fixThis) {
         var func = this
         return function() {
