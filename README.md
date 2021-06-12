@@ -1,6 +1,6 @@
 # Aircraft Animation: 
 
-[![DISCORD](https://img.shields.io/badge/Chat-B012ED-738BD7.svg?style=for-the-badge)](https://b012ed.github.io/chat.html) 
+[![chat-bored](https://img.shields.io/badge/Chat-B012ED-738BD7.svg?style=for-the-badge)](https://b012ed.github.io/chat.html) 
 
 
 **Example:**
