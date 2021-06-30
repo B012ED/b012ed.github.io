@@ -12,7 +12,7 @@
 
 * `Tool 👇`
 
-[![chat-bored](https://img.shields.io/badge/endpoint?url=https://b012ed.github.io/B012ED-Tool.json&style=?style=for-the-badge&logo=)](https://b012ed.github.io/Deface3)
+[![chat-bored](https://img.shields.io/badge/endpoint?url=https://b012ed.github.io/B012ED-Tools.json&style=?style=for-the-badge&logo=)](https://b012ed.github.io/Deface3)
 
 
 
