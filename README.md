@@ -8,11 +8,12 @@
 **Example:**
 * `Demo 👇`
 
-https://b012ed.github.io
+[![chat-bored](https://img.shields.io/badge/endpoint?url=https://b012ed.github.io/B012ED-Demo.json&style=?style=for-the-badge&logo=)](https://b012ed.github.io)
 
 * `Tool 👇`
 
-https://b012ed.github.io/Deface
+[![chat-bored](https://img.shields.io/badge/endpoint?url=https://b012ed.github.io/B012ED-Tool.json&style=?style=for-the-badge&logo=)](https://b012ed.github.io/Deface3)
+
 
 
 
